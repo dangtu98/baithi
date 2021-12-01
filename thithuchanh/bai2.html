@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    arr = [15,6,8,9,11,14,12]
+    function check(number, arr){
+        for (let i = 0; i < arr.length; i++) {
+            if(number === arr[i]){
+                return  i
+            }
+        }
+        return -1
+    }
+    let number = +prompt("nhập số cần tìm")
+    if (check(number,arr) === -1){
+        alert("phần tử không nằmg trong mảng")
+    }else{
+        alert("phần tử có nằm trong mảng  ")
+    }
+
+</script>
+</body>
+</html>
